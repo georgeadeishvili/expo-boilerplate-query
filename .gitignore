@@ -5,6 +5,14 @@ node_modules/
 
 # Expo
 .expo/
+.yarn
+!.yarn/patches/
+!.yarn/patches/*
+!.yarn/patches
+android
+ios
+coverage
+.idea
 dist/
 web-build/
 expo-env.d.ts

@@ -1,6 +1,26 @@
 {
-  "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true
-  }
+	"extends": "expo/tsconfig.base",
+	"compilerOptions": {
+		"strict": true,
+		"baseUrl": ".",
+		"paths": {
+			"@assets/*": ["./assets/*"],
+			"@components": ["./src/components"],
+			"@components/*": ["./src/components/*"],
+			"@screens/*": ["./src/screens/*"],
+			"@constants": ["./src/constants"],
+			"@navigation/*": ["./src/navigation/*"],
+			"@hooks": ["./src/hooks"],
+			"@hooks/*": ["./src/hooks/*"],
+			"@store/*": ["./src/store/*"],
+			"@utils/*": ["./src/utils/*"],
+			"@theme": ["./theme"],
+			"@secrets/*": ["./secrets/*"],
+			"@services": ["./src/services"],
+			"@services/*": ["./src/services/*"],
+			"@types": ["./src/types"],
+			"@types/*": ["./src/types/*"]
+		}
+	},
+	"include": ["src/**/*", "App.tsx"]
 }
