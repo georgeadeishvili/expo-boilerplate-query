@@ -1,0 +1,17 @@
+# Ignore artifacts:
+.*
+__*
+!__tests__/
+*.md
+*.json
+*.d.ts
+
+node_modules
+ios
+android
+build
+assets
+coverage
+
+package.json
+yarn.lock
